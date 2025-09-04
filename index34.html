@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Lamha 🎂</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* === General Styles === */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #0a1c3a, #0d2a5a, #07142d);
+      color: #e0e0e0;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 {
+      color: #ff77aa;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* === Starry Background === */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: radial-gradient(white, transparent 2px);
+      background-size: 4px 4px;
+      opacity: 0.4;
+      pointer-events: none;
+      animation: twinkle 3s infinite;
+      z-index: -1;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.7; }
+    }
+
+    /* === Hero Section === */
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      margin: 15px 10px;
+      padding: 10px 20px;
+      background: #ff77aa;
+      color: white;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: #ff5599;
+    }
+
+    /* === Timeline === */
+    .timeline {
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    .timeline-item {
+      background: rgba(13, 42, 90, 0.6);
+      border-left: 4px solid #ff77aa;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .timeline-item:hover {
+      transform: scale(1.02);
+    }
+
+    .timeline-item h3 {
+      margin: 0 0 5px 0;
+      color: #ff77aa;
+    }
+
+    /* === Songs === */
+    .songs {
+      max-width: 600px;
+      margin: 50px auto;
+    }
+
+    .song {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(13, 42, 90, 0.6);
+      padding: 10px 15px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .song a {
+      background: none;
+      border: 2px solid #ff77aa;
+      padding: 5px 10px;
+      border-radius: 20px;
+      color: #ff77aa;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    .song a:hover {
+      background: #ff77aa;
+      color: white;
+    }
+
+    /* === Gallery === */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: 50px auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.5s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* === Poem === */
+    .poem {
+      max-width: 800px;
+      margin: 50px auto;
+      line-height: 1.6;
+    }
+
+    .poem h3 {
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .poem p {
+      white-space: pre-line;
+      margin-bottom: 20px;
+    }
+
+    /* === Footer === */
+    .footer {
+      text-align: center;
+      margin: 50px 0 30px 0;
+      padding: 20px;
+      background: rgba(13, 42, 90, 0.7);
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero container">
+    <h1>Happy Birthday, Lamha! 🎂</h1>
+    <p>To my favorite girl, my world, my best friend, my everything — this is for you.</p>
+    <a href="#timeline" class="btn">Our Journey</a>
+    <a href="#poem" class="btn">Poem for You</a>
+  </div>
+
+  <!-- Timeline -->
+  <div id="timeline" class="timeline container">
+    <div class="timeline-item">
+      <h3>10 Mar 2025</h3>
+      <p>Confessed love to Lamha</p>
+    </div>
+    <div class="timeline-item">
+      <h3>6 Apr 2025</h3>
+      <p>First coffee date at Khanas</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Ramadan 2025</h3>
+      <p>Special rain moment, shared umbrella and ran together</p>
+    </div>
+    <div class="timeline-item">
+      <h3>After O-Levels 2025</h3>
+      <p>Two-week long distance; she missed you</p>
+    </div>
+    <div class="timeline-item">
+      <h3>17 Aug 2025</h3>
+      <p>Asked her out properly</p>
+    </div>
+    <div class="timeline-item">
+      <h3>9 Sept 2025</h3>
+      <p>Lamha's birthday & gift website 🎁</p>
+    </div>
+  </div>
+
+  <!-- Songs -->
+  <div class="songs container">
+    <h2>Songs for You</h2>
+    <div class="song">
+      <span>Song 1</span>
+      <a href="https://suno.com/s/PjEzW6OTq2BFAgez" target="_blank">Listen</a>
+    </div>
+    <!-- Add more songs here -->
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery container">
+    <img src="images/photo1.jpg" alt="Us together 1">
+    <img src="images/photo2.jpg" alt="Us together 2">
+    <img src="images/photo3.jpg" alt="Us together 3">
+    <!-- Add more photos here -->
+  </div>
+
+  <!-- Poem -->
+  <div id="poem" class="poem container">
+    <h2>\"When the Storm Ends\"</h2>
+    
+    <h3>Wazi</h3>
+    <p>I hope the storms embrace me in their comfort.
+I hope the rain reminds me of you.
+I hope the stars hide away among the clouds —
+like my dreams in your absence.
+
+I hope I finally find peace
+in the memories that come with the rain —
+of you,
+of us,
+of the future we dreamt.
+
+Let us be one
+the day the storm ends.
+Let us be one
+when the rainbow breaks through the silence,
+after the rain.</p>
+
+    <h3>Lamha</h3>
+    <p>As the war finally ends,
+we look around in search of each other.
+Our bodies covered with scars,
+blood streaming down like rivers,
+yet our hearts search for the other one.
+
+At last, when your eyes fall on me,
+a smile cracks on your face.
+My face enlightens to see yours.</p>
+
+    <h3>Wazi</h3>
+    <p>As we face each other in the aftermath of war,
+our eyes full of dreams and hopes
+reignite our hearts to pursue even greater heights.
+
+We walk toward each other
+with hearts full of longing and distance.
+Finally, in the embrace of each other —
+we find peace,
+we find our home.
+
+As God writes the end to our story,
+a story to be read for ages to come,
+a saga for generations —
+yet this was just the beginning
+of a story yet to find its climax.</p>
+
+    <h3>Lamha</h3>
+    <p>As we slowly walk towards each other,
+awaiting to touch,
+waiting for this nightmare to end...
+
+As we two hug, our hearts finally melt.
+Emotions overflow.
+Tears flow nonstop —
+both of us unable to express our happiness.
+
+As God smiles upon us,
+our storybook finally comes to an end.</p>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer container">
+    <h3>Forever Yours,</h3>
+    <p>— Wazi 💖</p>
+  </div>
+
+</body>
+</html>
